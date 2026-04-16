@@ -25,9 +25,6 @@ CREATE TABLE IF NOT EXISTS movement (
 conn.commit()
 
 def get_distance(trig, echo):
-    GPIO.output(trig, False)
-    time.sleep(0.05)
-
     GPIO.output(trig, True)
     time.sleep(0.00001)
     GPIO.output(trig, False)
