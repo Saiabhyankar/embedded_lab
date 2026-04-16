@@ -1,0 +1,72 @@
+RASPBERRY PI SENSOR CONNECTIONS
+
+GENERAL NOTES:
+- All GNDs must be connected together
+- GPIO works at 3.3V
+- Use resistors where required
+
+1. LED
+GPIO17 -> LED Anode (+)
+LED Cathode (-) -> 220Ω resistor -> GND
+
+2. BUTTON
+GPIO27 -> Button
+Other leg -> GND (using internal pull-up)
+
+3. DHT11 (Temperature & Humidity)
+VCC -> 5V
+DATA -> GPIO4
+GND -> GND
+
+4. BUZZER
++ -> GPIO18
+- -> GND
+
+5. 7-SEGMENT DISPLAY (Common Cathode)
+a -> GPIO5
+b -> GPIO6
+c -> GPIO13
+d -> GPIO19
+e -> GPIO26
+f -> GPIO16
+g -> GPIO20
+Common -> GND
+(Each segment via 220Ω resistor)
+
+6. ULTRASONIC SENSOR (HC-SR04)
+VCC -> 5V
+GND -> GND
+TRIG -> GPIO23
+ECHO -> GPIO24 (use voltage divider)
+
+7. GAS SENSOR (MQ-2)
+VCC -> 5V
+GND -> GND
+DO -> GPIO22
+
+8. PIR MOTION SENSOR
+VCC -> 5V
+GND -> GND
+OUT -> GPIO5
+
+9. CAMERA
+Connect via CSI port (ribbon cable)
+
+10. RFID (MFRC522)
+SDA -> GPIO8
+SCK -> GPIO11
+MOSI -> GPIO10
+MISO -> GPIO9
+RST -> GPIO25
+VCC -> 3.3V
+GND -> GND
+
+11. PRESSURE SENSOR
+VCC -> 3.3V/5V
+GND -> GND
+OUT -> GPIO13
+
+12. ALCOHOL SENSOR
+VCC -> 5V
+GND -> GND
+DO -> GPIO6
