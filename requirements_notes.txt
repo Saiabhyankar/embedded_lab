@@ -1,0 +1,15 @@
+# Suggested installs
+
+pip install gpiozero
+pip install RPi.GPIO
+pip install Adafruit_DHT
+pip install picamera
+pip install mfrc522
+pip install smbus2 bme280
+pip install pyfingerprint
+
+# Notes
+- Some libraries may already be present on Raspberry Pi OS.
+- Enable SPI for RFID.
+- Enable I2C for BMP280.
+- Enable camera support for the PIR + camera experiment.
